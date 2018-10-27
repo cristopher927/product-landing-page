@@ -3,11 +3,43 @@ body {
 }
 
 #nav-bar {
-	background-color: black;
 	position:fixed;
 	top:0;
 	right:0;
 	left: 0;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+.nav-link {
+	float: right;
+	font-family: 'Abril Fatface', cursive;
+	margin-right: 40px;
+	margin-top: 15px;
+	color: #DF013A;
+	font-weight: bold;
+	text-decoration: none;
+	border:2px solid #DF013A;
+	padding: 15px 45px;
+	border-radius: 18px;
+	transition: background-color 1s;
+}
+
+.nav-link:hover {
+	background-color: #DF013A;
+	color: white;
+}
+
+.nav-div {
+	position: absolute;
+	right: 80px;
+}
+
+#header-img {
+	margin-left: 80px;
+}
+
+#header-img, .nav-div {
+	display: inline;
 }
 
 @media only screen and (max-width: 480px) {
