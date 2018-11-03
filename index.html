@@ -3,7 +3,12 @@
 	<head>
 		<title>Product landing page</title>
 		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
 	</head>
 
 	<body>
@@ -16,24 +21,219 @@
 				<img src="logo.png" id="header-img" alt="company logo">
 					<div class="nav-div">		
 						<a href="#id" class="nav-link">Pricing</a>
-						<a href="#id" class="nav-link">Performances</a>
-						<a href="#id" class="nav-link">Why us?</a>
+						<a href="#performances" class="nav-link">Performances</a>
+						<a href="#why_us" class="nav-link">Why us?</a>
 					</div>
 			</nav>
 
 		</header>
 
+		<main>
+
+			<div id="slideshow">
+
+				<form action="https://www.freecodecamp.com/email-submit" id="form">
+
+					<input type="email" name="email" placeholder="Enter mail to get all the details" id="email" required> <br>
+					<input type="submit" value="Submit" id="submit">
+
+				</form>
+
+			  	<div class="slide-wrapper">
+				    <div class="slide"><img src="img/pic1.jpg" alt="slide" width="728px" height="510px"></div>
+					<div class="slide"><img src="img/pic2.jpg" alt="slide" width="728px" height="510px"></div>
+				    <div class="slide"><img src="img/pic3.jpg" alt="slide" width="728px" height="510px"></div>
+				    <div class="slide"><img src="img/pic4.jpg" alt="slide" width="728px" height="510px"></div>
+				    <div class="slide"><img src="img/pic5.jpg" alt="slide" width="728px" height="510px"></div>
+				    <div class="slide"><img src="img/pic6.jpg" alt="slide" width="728px" height="510px"></div>
+			 	 </div>
+			</div>
+
+			<section id="why_us">
+				<p>We're <span class="band_name">"Made in Hell"</span> from <span class='country1'>RO</span><span class="country2">MA</span><span class="country3">NIA</span> and we prefer our music loud and heavy!</p>
+				<p>We sing wherever you crazy metalheads want us to sing!<p> 
+				<p>And especially if you have beer! Just call us!</p>
+
+				<div class="why_them">
+					<i class="fas fa-fist-raised" style="font-size: 30px;color: #086A87;"></i><h1> Good Experience</h1>
+					<p>We played in most of the metal festivals on the country</p>
+					<i class="fas fa-hand-holding-usd" style="font-size: 30px;color: #086A87;"></i><h1> Low pricing</h1>
+					<p>We don't care too much about the money, the pricing is low. But you have to give us as much beer as possible!</p>
+					<i class="fas fa-gift" style="font-size: 30px;color: #086A87"></i><h1> Merchandise as bonus</h1>
+					<p>If you call us to play in your town we'll come with a large variety of t-shirts with the band's logo and CD's with our music. All just to sell them at cheap prices to you big fans out there!</p>
+				</div>
+			</section>
+
+			<section id="performances">
+
+				<p>Wanna hear a bit of how our music sounds like? Slayer is our biggest influence! </p>
+
+				<video width="400" controls="">
+					<source src="music/slayer-reborn.mp4" type="video/mp4">
+						Your browser doesn't support the video tag.
+				</video>
+
+				<p class="last-month">We were pretty active during the last month:</p>
+
+				<table class="table-calendar">
+					<caption>October 2018</caption>
+
+					<tr>
+						<th>Mon</th>
+						<th>Tue</th>
+						<th>Wed</th>
+						<th>Thu</th>
+						<th>Fri</th>
+						<th>Sat</th>
+						<th>Sun</th>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td class="days" onmouseover="document.getElementById('bacau').style.visibility = 'visible';" onmouseout="document.getElementById('bacau').style.visibility = 'hidden';">3</td>
+
+							<div class="div-day3" id="bacau">
+								<h3>Bacau, Oct 3 <br> (Club Xtreme Kickass)</h3>
+								<p>Other bands that participated: <br> Up To Eleven, Tiarra</p> 
+							</div>
+
+						<td class="days" onmouseover="document.getElementById('iasi').style.visibility = 'visible';" onmouseout="document.getElementById('iasi').style.visibility = 'hidden';">4</td>
+
+							<div class="div-day4" id="iasi">
+								<h3>Iasi, Oct 4 <br> 
+								(Club Gates of Hell)</h3>
+								<p>Other bands that participated:<br> Truda, Cargo</p>
+							</div>
+
+						<td>5</td>
+						<td>6</td>
+						<td class="days" onmouseover="document.getElementById('suceava').style.visibility = 'visible';" onmouseout="document.getElementById('suceava').style.visibility = 'hidden';">7</td>
+
+							<div class="div-day7" id="suceava">
+								<h3>Suceava, Oct 7 <br> 
+								(Club Metalloteka)</h3>
+								<p>Other bands that participated:<br> Akral Necrosis, L.O.S.T.</p>
+							</div>
+					</tr>
+					<tr>
+						<td class="days" onmouseover="document.getElementById('focsani').style.visibility = 'visible';" onmouseout="document.getElementById('focsani').style.visibility = 'hidden';">8</td>
+
+							<div class="div-day8" id="focsani">
+								<h3>Focsani, Oct 8 <br> 
+								(Havana Cafe)</h3>
+								<p>Other bands that participated:<br> Deceased, 9, 7 Richter</p>
+							</div>
+
+						<td class="days" onmouseover="document.getElementById('galati').style.visibility = 'visible';" onmouseout="document.getElementById('galati').style.visibility = 'hidden';">9</td>
+
+							<div class="div-day9" id="galati">
+								<h3>Galati, Oct 9 <br> 
+								(Satan's Beard Pub)</h3>
+								<p>Other bands that participated:<br> Altar, Bucovina</p>
+							</div>
+
+						<td>10</td>
+						<td>11</td>
+						<td>12</td>
+
+						<td class="days" onmouseover="document.getElementById('buzau').style.visibility = 'visible';" onmouseout="document.getElementById('buzau').style.visibility = 'hidden';">13</td>
+
+							<div class="div-day13" id="buzau">
+								<h3>Buzau, Oct 13 <br> 
+								(Fuck N Roll Pub)</h3>
+								<p>Other bands that participated:<br> Cap De Craniu, C.A.S.H.</p>
+							</div>
+
+						<td class="days" onmouseover="document.getElementById('ploiesti').style.visibility = 'visible';" onmouseout="document.getElementById('ploiesti').style.visibility = 'hidden';">14</td>
+
+							<div class="div-day14" id="ploiesti">
+								<h3>Ploiesti, Oct 14 <br> 
+								(Teutonic Metal Pub)</h3>
+								<p>Other bands that participated:<br> God, Necrovile</p>
+							</div>
+
+					</tr>
+					<tr>
+						<td>15</td>
+						<td class="days" onmouseover="document.getElementById('pitesti').style.visibility = 'visible';" onmouseout="document.getElementById('pitesti').style.visibility = 'hidden';">16</td>
+
+							<div class="div-day16" id="pitesti">
+								<h3>Pitesti, Oct 16 <br> 
+								(Club Venezia)</h3>
+								<p>Other bands that participated:<br> Sanctuar, Sincarnate</p>
+							</div>
+
+
+						<td>17</td>
+						<td class="days" onmouseover="document.getElementById('bucuresti').style.visibility = 'visible';" onmouseout="document.getElementById('bucuresti').style.visibility = 'hidden';">18</td>
+
+							<div class="div-day18" id="bucuresti">
+								<h3>Bucuresti, Oct 18 <br> 
+								(Club Fabrica Rock)</h3>
+								<p>Other bands that participated:<br> Abigail, Defender</p>
+							</div>
+
+						<td>19</td>
+
+						<td class="days" onmouseover="document.getElementById('sibiu').style.visibility = 'visible';" onmouseout="document.getElementById('sibiu').style.visibility = 'hidden';">20</td>
+
+							<div class="div-day20" id="sibiu">
+								<h3>Sibiu, Oct 20 <br> 
+								(Club Metal Heart)</h3>
+								<p>Other bands that participated:<br> Guillotine, Hyleon</p>
+							</div>
+
+						<td>21</td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>23</td>
+						<td>24</td>
+
+						<td class="days" onmouseover="document.getElementById('brasov').style.visibility = 'visible';" onmouseout="document.getElementById('brasov').style.visibility = 'hidden';">25</td>
+
+							<div class="div-day25" id="brasov">
+								<h3>Brasov, Oct 25 <br> 
+								(Club Hell Unleashed)</h3>
+								<p>Other bands that participated:<br> True Mind, Taine</p>
+							</div>
+
+						<td>26</td>
+						<td>27</td>
+						<td>28</td>
+					</tr>
+					<tr>
+						<td class="days" onmouseover="document.getElementById('cluj').style.visibility = 'visible';" onmouseout="document.getElementById('cluj').style.visibility = 'hidden';">29</td>
+
+							<div class="div-day29" id="cluj">
+								<h3>Cluj-Napoca, Oct 29 <br> 
+								(Club Satan Klaus)</h3>
+								<p>Other bands that participated:<br> Phonopia, Inopia</p>
+							</div>
+
+						<td class="days" onmouseover="document.getElementById('timisoara').style.visibility = 'visible';" onmouseout="document.getElementById('timisoara').style.visibility = 'hidden';">30</td>
+
+							<div class="div-day30" id="timisoara">
+								<h3>Timisoara, Oct 30 <br> 
+								(Club Teddy Bears)</h3>
+								<p>Other bands that participated:<br> Legacy, In Defiance</p>
+							</div>
+
+						<td>31</td>
+						
+					</tr>
+				</table>
+
+			</section>
+
+			
+
 		<!-- USE FLEXBOX SOMEWHERE HERE AS THE FINAL DEMAND FROM FREECODECAMP -->
 
-		<video></video>
+			
 
-		<form action="https://www.freecodecamp.com/email-submit" id="form">
-
-			<input type="email" name="email" placeholder="Enter mail to get all the details" id="email" required>
-
-			<input type="submit" value="Submit" id="submit">
-
-		</form>
+			
+		</main>
 
 	</body>
 </html>

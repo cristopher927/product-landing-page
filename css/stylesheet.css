@@ -1,5 +1,195 @@
+* {box-sizing: border-box;}
+
 body {
 	margin:0;
+}
+
+main {
+	margin: 120px 30px 30px 30px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+	display: block;
+}
+
+.table-calendar, .table-calendar tr, .table-calendar th, .table-calendar td {
+	border:1px solid #DF013A;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+.table-calendar caption {
+	background-color: #DF013A;
+	color: white;
+	width: 100%;
+}
+
+.table-calendar .days {
+	background-color: yellow;
+}
+
+.table-calendar .days:hover {
+	cursor: pointer;
+	background-color: orange;
+}
+
+.div-day3 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 170px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day4 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 170px;
+	left: 15px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day7 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 170px;
+	left: 125px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day8 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 210px;
+	left: -65px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day9 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 210px;
+	left: -35px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day13 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 210px;
+	left: 105px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day14 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 210px;
+	left: 125px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day16 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 245px;
+	left: -35px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day18 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 245px;
+	left: 15px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day20 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 245px;
+	left: 105px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day25 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 282px;
+	left: 15px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day29 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 315px;
+	left: -65px;
+	z-index: 1;
+	padding: 15px;
+}
+
+.div-day30 {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50%;
+	color: white;
+	visibility: hidden;
+	position: absolute;
+	top: 315px;
+	left: -35px;
+	z-index: 1;
+	padding: 15px;
+}
+
+#header {
+	display: block;
+	z-index: 1;
+	background-color: #D8D8D8;
 }
 
 #nav-bar {
@@ -7,7 +197,42 @@ body {
 	top:0;
 	right:0;
 	left: 0;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+	border-bottom: 2px solid #DF013A;
+	background-color: white;
+	z-index: 1;
+}
+
+#form {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+}
+
+#email {
+	width: 260px;
+	padding: 5px;
+}
+
+#email:focus {
+	background-color: lightblue;
+}
+
+#submit {
+	border-radius: 10px;
+	padding: 10px;
+	margin:5px;
+	background-color: white;
+	border:1px solid #086A87;
+	color: #086A87;
+	transition: background-color 1s;
+	font-weight: bold;
+}
+
+#submit:hover {
+	background-color: #086A87;
+	color:white;
+	cursor: pointer;
 }
 
 .nav-link {
@@ -41,6 +266,84 @@ body {
 #header-img, .nav-div {
 	display: inline;
 }
+
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  display: block;
+  position: relative;
+  top: 80px;
+  margin: auto;
+}
+
+#why_us {
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 100px;
+	font-family: 'Spicy Rice', cursive;
+	font-size: 20px;
+}
+
+#performances {
+	display: block;
+	position: relative;
+	left: 30px;
+	top: 170px;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 20px;
+}
+
+p.last-month {text-align: left;}
+
+.band_name {color: #DF013A;}
+
+.country1 {color: blue;}
+
+.country2 {color: yellow;}
+
+.country3 {color: red;}
+
+.why_them {
+	text-align: left;
+	margin-left: 30px;
+	font-family: 'Playfair Display', serif;
+}
+
+.why_them i, .why_them h1 {
+	display: inline;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+
 
 @media only screen and (max-width: 480px) {
 
